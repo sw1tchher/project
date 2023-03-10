@@ -1,0 +1,38 @@
+.offer{
+    background: linear-gradient(to bottom, #42b773, #a9dc56 100%) ;
+}
+.offer-inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.offer-item{
+    width: calc(33.3% - 30px);
+    text-align: center;
+    color: #fff;
+}
+.offer-item img{
+    width: 70%;
+    border-radius: 50%;
+}
+.offer-item a{
+    display: block;
+    text-decoration: none;
+    line-height: 29px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-size: 20px;
+}
+.offer-item p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2;
+}
+.offer-item a:hover{
+    color: #42464f;
+    text-decoration: underline;
+    transition: .3s;
+}

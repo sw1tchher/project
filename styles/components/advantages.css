@@ -1,0 +1,67 @@
+.advantages{
+    background-image: url(../../images/adv-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.advantages-inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.adv-item{
+    width: calc(25%-30px);
+    text-align: center;
+    color: #fff;
+
+}
+.adv-item i{
+    font-size: 60px;
+
+}
+.adv-item a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.adv-item p{
+    font-size: 13x;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.6px;
+}
+.adv-item a:hover{
+    color: #42b773;
+    text-decoration: underline;
+    transition: .3s ;
+}
+
+.advantages::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 157px;
+    height: 68px;
+    background-image: url('../../images/section-white-circle-top.png');
+    margin: 0 auto;
+    
+}
+
+.advantages::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 157px;
+    height: 68px;
+    background-image: url('../../images/white-circle.png');
+    margin: 0 auto;
+    
+}

@@ -1,0 +1,73 @@
+.home{
+    /* точка и слеш это выход из папки */
+    background-image: url('../../images/home-bg.jpg');
+    padding: 250px 0;
+    background-size: cover;
+    position: relative;
+
+}
+.home-inner{
+    color: #fff;
+    text-align: center;
+    
+}
+.home-inner h2{
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.home-inner h1{
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 30px 0 20px;
+}
+.home-inner p{
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+}
+.home-inner a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 25px 60px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+    /*                              НАПРАВЛЕНИЕ, НАЧАЛЬНЫЙ цвет, цвет в конце */
+    background: linear-gradient(to right, #42b773 0%, #a9dc56 100%);
+    position: relative;
+    z-index: 1;
+}
+.home-inner a::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #42b773 0%, #42b773 100%);
+    /* op-прозрачность */
+    opacity: 0;
+    z-index: -1;
+    border-radius: 5px;
+}
+.home-inner a:hover::before{
+    opacity: 1;
+    transition: .5s;
+}
+.home::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 157px;
+    height: 68px;
+    background-image: url('../../images/white-circle.png');
+    margin: 0 auto;
+    
+}

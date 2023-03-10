@@ -1,0 +1,109 @@
+/* break-point
+    large display > 992px
+    ipad < 768px
+    laptops < 992px
+    phones < 600px
+    min display - 320px
+*/
+@media(max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+    .head-logo i{
+        display: block;
+    }
+    .head-menu{
+        display: none;
+    }
+    .about-inner{
+        flex-wrap: wrap;
+    }
+    .about-left{
+        width: 100%;
+        height: 300px;
+    }
+    .about-right{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .number-item{
+        width: 100%;
+    }
+    .offer-inner{
+        flex-wrap: wrap;
+    }
+    .offer-item{
+        width: calc(50% - 30px);
+        margin: 20px auto;
+    }
+    .serv-item{
+        width: calc(50% - 30px);
+    }
+    .gallery-inner{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 686px 1029px 686px;
+    }
+    .gallery-container:not(:nth-child(2)){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 171px;
+    }
+    .gallery-container:nth-child(2) {
+        grid-auto-rows: 257px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media(max-width: 768px ){
+    .container{
+        max-width: 576px;
+    }
+    .counter-inner{
+        flex-wrap: wrap;
+    }
+    .counter-item{
+        width: calc(50% - 30px);
+        margin: 20px auto;
+    }
+    .advantages-inner{
+        flex-wrap: wrap;
+    }
+    .adv-item{
+        width: calc(50% - 30px);
+        margin: 20px auto;
+    }
+    .offer-item{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .serv-item{
+        width: 100%;
+    }
+    .contact-inner input{
+        width: 100%;
+    }
+    .contact-info{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 576px ){
+    .container{
+        max-width: 320px;
+    }
+    .counter-item{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .adv-item{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .social-item{
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+}
